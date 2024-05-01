@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia ITQ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Farmacia ITQ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="btnInicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="btnImagenes">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="btnContacto">Ubicación</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1>Bienvenido a Farmacia ITQ</h1>
+    <p>Somos una farmacia comprometida con la salud y el bienestar de nuestros clientes. Ofrecemos una amplia gama de productos farmacéuticos y servicios para satisfacer sus necesidades.</p>
+    
+    <div class="mt-4">
+        <button class="btn btn-primary mr-2" id="btnVerImagenes">Ver Productos</button>
+        <button class="btn btn-success" id="btnEnviarMensaje">Enviar Mensaje</button>
+    </div>
+    
+    <div id="formularioMensaje" style="display: none;">
+        <form id="formMensaje">
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    
+    <!-- Sección de imágenes -->
+    <div id="seccionImagenes" style="display: none;">
+        <h2>Nuestras Productos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/69.jpg" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ibuprofeno 400 mg</h5>
+                        <p class="card-text"> El ibuprofeno es un medicamento antiinflamatorio no esteroideo (AINE) que se utiliza comúnmente para aliviar el dolor, la inflamación y la fiebre. Es eficaz para tratar dolores de cabeza, dolores musculares, artritis, dolor menstrual y otros tipos de molestias.</p>
+                        <button class="btn btn-primary btn-block btn-comprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/56.jpg" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Paracetamol 500 mg</h5>
+                        <p class="card-text">El paracetamol es un analgésico y antipirético ampliamente utilizado para aliviar el dolor leve a moderado y reducir la fiebre. Es seguro para la mayoría de las personas cuando se toma según las indicaciones, pero debe usarse con precaución en ciertas condiciones médicas y no debe excederse la dosis recomendada.</p>
+                        <button class="btn btn-primary btn-block btn-comprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/59.jpeg" class="card-img-top" alt="Imagen 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Omeprazol 20 mg</h5>
+                        <p class="card-text">El omeprazol es un medicamento inhibidor de la bomba de protones (IBP) que se utiliza para tratar trastornos relacionados con el ácido del estómago, como la enfermedad por reflujo gastroesofágico (ERGE), úlceras gástricas y duodenales, y el síndrome de Zollinger-Ellison. Ayuda a reducir la producción de ácido en el estómago y a aliviar los síntomas asociados.</p>
+                        <button class="btn btn-primary btn-block btn-comprar">Comprar</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <!-- Mapa -->
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127673.87445339239!2d-78.6269219!3d-0.1266259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5856af6275ce3%3A0x73f799e84e9306!2sFarmacias%20Cruz%20Verde!5e0!3m2!1ses-419!2sec!4v1714528879372!5m2!1ses-419!2sec" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+
+<footer class="footer py-3 bg-dark text-white">
+    <div class="container text-center">
+        <span>© 2024 Farmacia ITQ. Todos los derechos reservados a Maicol.007.</span>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script>
+<script src="script.js"></script>
+</body>
+</html>
